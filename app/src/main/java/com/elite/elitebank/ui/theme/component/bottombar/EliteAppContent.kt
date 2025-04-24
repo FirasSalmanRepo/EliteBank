@@ -33,9 +33,7 @@ fun EliteAppContent(
             containerColor = Color.Transparent,
             contentWindowInsets = WindowInsets(0, 0, 0, 0),
             bottomBar = {
-
                 val isBottomNavRoute: Boolean = controller.isBottomNavRoute()
-
                 EliteAppBottomBar(
                     isBottomBarVisible = isBottomNavRoute && isBottomBarVisible,
                     isTabSelected = {
@@ -43,13 +41,10 @@ fun EliteAppContent(
                     },
                     onTabClicked = {
                         controller.navigate(it) {
-
-                            popUpTo(NavRoute.HOME.ROOT) {
+                            popUpTo(NavRoute.HOME.HomeDIR) {
                                 saveState = true
                             }
-
                             launchSingleTop = true
-
                             restoreState = true
                         }
                     }
