@@ -1,5 +1,6 @@
 package com.elite.elitebank.feature.onboarding.guide
 
+import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -197,7 +198,10 @@ private fun GuideScreenContent(
             Spacer(modifier = Modifier.weight(1f))
 
             ElitePrimaryButton(text = "Get Started", Modifier.fillMaxWidth()) {
+                Log.d("GuideScreen", "Get Started Clicked")
                 onEvent(GuideEvent.OnGetStartedClicked)
+
+                
             }
 
             Spacer(modifier = Modifier.height(Paddings.default))

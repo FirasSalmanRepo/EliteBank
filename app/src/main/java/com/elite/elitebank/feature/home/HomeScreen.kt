@@ -73,7 +73,6 @@ fun HomeScreenContent(
     }
 }
 
-
 @Preview(showSystemUi = true)
 @Composable
 private fun HomeScreenPreview() = HomeScreen(

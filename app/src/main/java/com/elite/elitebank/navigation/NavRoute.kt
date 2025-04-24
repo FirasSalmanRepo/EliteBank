@@ -15,6 +15,7 @@ object NavRoute {
 
     object HOME {
         const val ROOT = "home"
+        const val HomeDIR = "home_dir"
     }
 
     object TransferBANK {

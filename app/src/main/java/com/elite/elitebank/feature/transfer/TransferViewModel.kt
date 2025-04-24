@@ -3,13 +3,19 @@ package com.elite.elitebank.feature.transfer
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
-import androidx.lifecycle.ViewModel
+import com.elite.elitebank.core.BaseViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class TransferViewModel :ViewModel() {
+@HiltViewModel
+class TransferViewModel  @Inject constructor(
+
+) : BaseViewModel<TransferEvent>() {
     var state by mutableStateOf(TransferState())
         private set
 
-    fun onEvent(event: TransferEvent) {
+    override fun onEvent(event: TransferEvent) {
+        super.onEvent(event)
 
     }
 }

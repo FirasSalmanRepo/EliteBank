@@ -55,7 +55,7 @@ class AppImpl : AppRepo {
         dataList.add(
             Transaction(
                 imageUrl = "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg",
-                name = "Natalya Undergrowth",
+                name = "Khalid Ali",
                 date = "Today at 12:15 am",
                 amount = "+$102.32",
                 isDebit = true
@@ -64,7 +64,7 @@ class AppImpl : AppRepo {
         dataList.add(
             Transaction(
                 imageUrl = "https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725580800&semt=ais_hybrid",
-                name = "Norman Gordon",
+                name = "Osama Ahmad",
                 date = "Yesterday at 12:45 am",
                 amount = "-$324.32",
                 isDebit = false
@@ -73,7 +73,7 @@ class AppImpl : AppRepo {
         dataList.add(
             Transaction(
                 imageUrl = "https://www.perfocal.com/blog/content/images/size/w960/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg",
-                name = "Sir Cumference",
+                name = "Jwan Firas",
                 date = "Yesterday at 12:45 am",
                 amount = "+563.32",
                 isDebit = true
@@ -82,7 +82,7 @@ class AppImpl : AppRepo {
         dataList.add(
             Transaction(
                 imageUrl = "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
-                name = "Gustav Purpleson",
+                name = " Mohammad Rashad",
                 date = "Yesterday at 12:45 am",
                 amount = "-$143.54",
                 isDebit = false

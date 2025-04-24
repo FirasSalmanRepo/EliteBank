@@ -76,7 +76,7 @@ private fun NavController.isBottomNavRoute(): Boolean {
     val currentNavRoute = currentDestination?.route
 
     return currentNavRoute in listOf(
-        NavRoute.HOME.ROOT,
+        NavRoute.HOME.HomeDIR,
         NavRoute.TransferBANK.MAIN,
         NavRoute.Menu.LIST
     )
@@ -84,13 +84,9 @@ private fun NavController.isBottomNavRoute(): Boolean {
 
 @Composable
 private fun NavController.isTabSelected(route: String): Boolean {
-
     val navBackStackEntry = this.currentBackStackEntry
-
     val currentDestination = navBackStackEntry?.destination
-
     return currentDestination?.hierarchy?.any {
-
         val routeArr = it.route?.split("?") ?: emptyList()
         val authority = if (routeArr.isEmpty()) {
             it.route

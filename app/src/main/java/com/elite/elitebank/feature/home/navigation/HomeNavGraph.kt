@@ -9,14 +9,18 @@ import com.elite.elitebank.core.baseComposable
 import com.elite.elitebank.feature.home.HomeScreen
 import com.elite.elitebank.feature.home.HomeScreenState
 import com.elite.elitebank.feature.home.HomeViewModel
+import com.elite.elitebank.feature.menu.MenuListScreen
+import com.elite.elitebank.feature.menu.MenuListScreenState
+import com.elite.elitebank.feature.menu.MenuListViewModel
 import com.elite.elitebank.navigation.NavRoute
 
 
 fun NavGraphBuilder.homeNavGraph() = navigation(
-    route = NavRoute.Menu.ROOT,
-    startDestination = NavRoute.HOME.ROOT
+    route = NavRoute.HOME.ROOT,
+    startDestination = NavRoute.HOME.HomeDIR
 ) {
-    baseComposable(NavRoute.HOME.ROOT) {
+
+    baseComposable(NavRoute.HOME.HomeDIR) {
         val viewModel: HomeViewModel = hiltViewModel()
         val state: HomeScreenState by viewModel.state.collectAsStateWithLifecycle()
         HomeScreen(
@@ -25,5 +29,3 @@ fun NavGraphBuilder.homeNavGraph() = navigation(
         )
     }
 }
-
-
