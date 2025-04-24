@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">EliteBank</string>
+    <string name="money_transfer_statistics">Money Transfer Statistics</string>
+    <string name="money_transfer_statistics_note">Nunc sagittisbibendum sagittis. Sed eget enim vitae libero molestie bibendum.</string>
+    <string name="scan_input_hint">Enter your name, card number</string>
+    <string name="popular">Popular</string>
+    <string name="from_card">From the Card</string>
+    <string name="view_all">View All</string>
+    <string name="amount">Amount</string>
+    <string name="send_money">Send Money</string>
+    <string name="home">Home</string>
+    <string name="transfer">Transfer</string>
+    <string name="payments">Payments</string>
+    <string name="add_card">Add Card</string>
+    <string name="more">More</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="amount_number1">$65,720.10"</string>
+    <string name="amount_number2">$45,210.03"</string>
+    <string name="name">Name</string>
+    <string name="my_name">Firas Salman</string>
+    <string name="beneficiary">Beneficiary</string>
+</resources>
