@@ -1,5 +1,4 @@
 
-Elite App
 Elite app is an app showcasing all the latest Jetpack Compose techniques implemented properly, and follows architecture.
 This app can be used as a reference or as a learning journey for Jetpack Compose.
 ![s7](https://github.com/user-attachments/assets/15444655-6bea-4cf5-8b00-578cbf68c2c8)
