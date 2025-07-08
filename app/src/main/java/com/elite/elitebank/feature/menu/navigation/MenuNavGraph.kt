@@ -15,7 +15,6 @@ fun NavGraphBuilder.menuNavGraph() = navigation(
     route = NavRoute.Menu.ROOT,
     startDestination = NavRoute.Menu.LIST
 ) {
-
     baseComposable(NavRoute.Menu.LIST) {
         val viewModel: MenuListViewModel = hiltViewModel()
         val state:MenuListScreenState by viewModel.state.collectAsStateWithLifecycle()

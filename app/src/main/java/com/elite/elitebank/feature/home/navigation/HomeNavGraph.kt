@@ -11,12 +11,10 @@ import com.elite.elitebank.feature.home.HomeScreenState
 import com.elite.elitebank.feature.home.HomeViewModel
 import com.elite.elitebank.navigation.NavRoute
 
-
 fun NavGraphBuilder.homeNavGraph() = navigation(
     route = NavRoute.HOME.ROOT,
     startDestination = NavRoute.HOME.HomeDIR
 ) {
-
     baseComposable(NavRoute.HOME.HomeDIR) {
         val viewModel: HomeViewModel = hiltViewModel()
         val state: HomeScreenState by viewModel.state.collectAsStateWithLifecycle()

@@ -1,4 +1,4 @@
-package com.dkexception.aqiapp.di
+package com.elite.elitebank.core.di
 
 import com.elite.elitebank.core.environment.EnvironmentImpl
 import com.elite.elitebank.core.environment.IEnvironment

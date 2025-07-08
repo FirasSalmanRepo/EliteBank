@@ -41,7 +41,7 @@ fun EliteAlertDialog(
 
 @Preview
 @Composable
-private fun DXAlertDialogPreview() = EliteAlertDialog(
+private fun AlertDialogPreview() = EliteAlertDialog(
     title = "Are you sure?",
     optionalSubtitle = "Logging out will clear your saved places and all data.",
     primaryButtonTextToActionPair = "Log Out" to {},

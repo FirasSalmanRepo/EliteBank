@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -27,8 +28,8 @@ import com.elite.elitebank.ui.theme.EliteColors.drakBlue
 import com.elite.elitebank.ui.theme.component.labels.EliteLabelPrimary
 
 
-
 @Composable
+@Preview
 fun CreditCard(
     background: Color = blue, modifier: Modifier = Modifier, amountBackground: Color = drakBlue,
     amountFontSize: TextUnit = 22.sp, cardNumberFontSize: TextUnit = 30.sp

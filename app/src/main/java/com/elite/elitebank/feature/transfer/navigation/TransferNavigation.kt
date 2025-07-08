@@ -13,7 +13,6 @@ fun NavGraphBuilder.transferBankNavGraph() = navigation(
     route = NavRoute.TransferBANK.ROOT,
     startDestination = NavRoute.TransferBANK.MAIN
 ) {
-
     baseComposable(NavRoute.TransferBANK.MAIN) {
         val viewModel: TransferViewModel = hiltViewModel()
         TransferScreen (state = viewModel.state, onEvent = viewModel::onEvent)
